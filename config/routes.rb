@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :game_players
+  resources :games
   devise_for :users
   resources :users
   root to: "home#index"
